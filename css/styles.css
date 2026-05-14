@@ -1,0 +1,79 @@
+.feedback {
+  font-family: "Tajawal" sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 64px 20px;
+  display: block;
+  width: 375px;
+  margin: 0 auto;
+  @media screen and (min-width: 375px) {
+    width: auto;
+    @media screen and (min-width: 768px) {
+      padding: 64px 32px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 64px 64px;
+    }
+  }
+}
+
+.feedback-header {
+  font-family: "Caveat", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 80px;
+  }
+}
+
+.feedback-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1440px) {
+    gap: 32px;
+  }
+}
+
+.feedback-list-item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 24px) / 2);
+  }
+  @media screen and (min-width: 1440px) {
+    width: calc((100% - 64px) / 3);
+  }
+}
+
+li {
+  list-style-type: none;
+}
+.feedback-item-wrapper {
+  border: 1px solid rgba(12, 7, 8, 0.15);
+  background-color: #faf6f3;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.feedback-stars-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 2px;
+}
+.feedback-stars-white {
+  fill: none;
+}
